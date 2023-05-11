@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+ /* ------ Config da pagina ------*/
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: #010103;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+ /* ------ Header ------ */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #010103;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .Logo img {
+    height: 6rem;
+}
+
+.header .menu a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .menu a:hover{
+    color: #d3ad7f;
+    border-bottom: .1rem solid #d3ad7f;
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: #d3ad7f;
+}
+
+
+#menu-botao {
+    display: none;
+}
+
+.header .busca {
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    height: 5rem;
+    position: absolute;
+    background: #fff;
+    top: 115%;
+    right: 7%;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+.header .busca.active {
+    transform: scaleY(1);
+}
+
+.header .busca input{
+    width: 100%;
+    height: 100%;
+    color: #010103;
+    padding: 1rem;
+    font-size: 1.6rem;
+    text-transform: none;
+}
+
+.header .busca label {
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    color: #010103;
+}
+
+.header .busca label:hover {
+    color: #d3ad7f;
+}
+
+.header .itens-carrinho {
+    position: absolute;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    padding: 0 1.5rem;
+    top: 100%;
+    right: -100%;
+    background: #fff;
+}
+
+.header .itens-carrinho.active {
+    right: 0;
+}
+
+.header .itens-carrinho .itens {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    position: relative;
+    gap: 1.5rem;
+}
+
+.header .itens-carrinho .itens .fa-times {
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+    color: #010103;
+    cursor: pointer;
+}
+
+.header .itens-carrinho .itens .fa-times:hover {
+    color: #d3ad7f;
+}
+
+.header .itens-carrinho .itens img{
+    height: 7rem;
+}
+
+.header .itens-carrinho .itens .add-compra h3 {
+    font-size: 2rem;
+    color: #010103;
+    padding-bottom: .5rem;
+}
+
+.header .itens-carrinho .itens .add-compra .preço {
+    font-size: 1.5rem;
+    color: #d3ad7f;
+}
+
+.header .itens-carrinho button {
+    width: 100%;
+    text-align: center;
+
+}
+
+/* ------ Design Buttom ------*/
+button {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    color: #fff;
+    background: #d3ad7f;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* ------ Home ------ */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/home-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .container h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .container p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 2;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+ /* ------ Sobre ------ */
+
+ .cabecalho {
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    color: #fff;
+ }
+
+ .cabecalho span {
+    text-transform: uppercase;
+    color: #d3ad7f;
+ }
+
+ .about .assunto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #13131a;
+}
+
+.about .assunto .imagem {
+    flex: 1 1 45rem;
+}
+
+.about .assunto .imagem img {
+    width: 100%;
+}
+
+.about .assunto .container {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .assunto .container h3 {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.about .assunto .container p {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    color:#ccc;
+}
+ 
+/* ------ Responsivo ------ */
+@media (max-width: 998px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #menu-botao{
+        display: inline-block;
+    }
+
+    .header .menu {
+        position: absolute;
+        background: #010103;
+        width: 100vw;
+        height: 100vh;
+        top: 100%;
+        right: -100%;
+    }
+
+    .header .menu.active {
+        right: 0;
+    }
+    
+    .header .menu a {
+        display: grid;
+        place-content: center;
+        margin: 7%;
+        padding: 1%;
+        font-size: 4rem;
+        color: #fff;
+
+    }
+
+    .header .menu a:hover{
+        color: #d3ad7f;
+        border-bottom: none;
+    }
+    
+
+    .header .busca {
+        width: 90%;
+        right: 2rem;
+    }
+}
+
+@media (max-width: 465px) {
+    html {
+        font-size: 50%;
+    }
+
+}

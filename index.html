@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Website Coffee</title>
+</head>
+<body>
+    <header class="header">
+        <div class="Logo">
+            <a href="#inicio"><img src="img/logo.png" alt="Logo"></a>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#menu">Menu</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#avaliaçoes">Avaliações</a>
+            <a href="#contatos">Contatos</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons flex">
+            <div class="fas  fa-search" id="busca-botao"></div>
+            <div class="fas  fa-shopping-cart" id="carrinho-botao"></div>
+            <div class="fas  fa-bars" id="menu-botao"></div>
+        </div>
+
+        <div class="busca">
+            <input type="search" id="caixa-de-busca" placeholder="O que você busca?">
+            <label for="caixa-de-busca" class="fas fa-search"></label>
+        </div>
+
+        <div class="itens-carrinho">
+            <div class="itens">
+                <span class="fas fa-times"></span>
+                <img src="img/cart-item-1.png" alt="Grão de café">
+                <div class="add-compra">
+                    <h3>Itens do carrinho 01</h3>
+                    <div class="preço">$15.99</div>
+                </div>
+            </div>
+
+            <div class="itens">
+                <span class="fas fa-times"></span>
+                <img src="img/cart-item-2.png" alt="Grão de café">
+                <div class="add-compra">
+                    <h3>Itens do carrinho 02</h3>
+                    <div class="preço">$15.99</div>
+                </div>
+            </div>
+
+            <div class="itens">
+                <span class="fas fa-times"></span>
+                <img src="img/cart-item-3.png" alt="Grão de café">
+                <div class="add-compra">
+                    <h3>Itens do carrinho 03</h3>
+                    <div class="preço">$15.99</div>
+                </div>
+            </div>
+
+            <div class="itens">
+                <span class="fas fa-times"></span>
+                <img src="img/cart-item-4.png" alt="Grão de café">
+                <div class="add-compra">
+                    <h3>Itens do carrinho 04</h3>
+                    <div class="preço">$15.99</div>
+                </div>
+            </div>
+
+            <div>
+                <a href="#"><button>finalizar pedido</button></a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="home" id="inicio">
+        <div class="container">
+            <h1>CAFÉ FRESCO DA <br> MANHÃ</h1>
+            <P>Que na simplicidade da vida, assim como um gole de café pela manhã, que possamos <br>Encontrar as respostas para o nosso verdadeiro propósito, a essência do viver!</P>
+            <a href="#"><button>pegue o seu agora</button></a>
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <h1 class="cabecalho"><span>sobre</span> nós </h1>
+        <div class="assunto">
+            <div class="imagem">
+                <img src="img/about-img.jpeg" alt="Xícara de Café">
+            </div>
+
+            <div class="container">
+                <h3>o que torna nosso café especial?</h3>
+                <p>O café é muito mais do que uma simples bebida. É um aroma que desperta os sentidos e um sabor que aquece a alma. A essência do café está em cada grão, em cada torra, em cada xícara. É a energia que ele nos proporciona pela manhã, a pausa que nos dá durante o dia e o conforto que nos traz à noite.</p>
+                <p>É a união que ele proporciona em torno de uma mesa, a conversa que ele estimula e a amizade que ele fortalece. O café é um verdadeiro tesouro, capaz de nos transportar para diferentes lugares do mundo e nos conectar com pessoas de diferentes culturas.</p>
+                <a href="#sobre"><button>saiba mais</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
